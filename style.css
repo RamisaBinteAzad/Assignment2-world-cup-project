@@ -1,0 +1,124 @@
+/* ______Google-Font__________ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*_____common style________ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* ______________________Header-Section Start_______________________  */
+.header-section{
+    width:80%;
+    height:92vh; 
+    color:#ffffff;
+    margin:0 auto;
+    margin-top: 1.5em;
+    display: flex;
+    background-color:#161616;
+    border-radius:1.2em;
+    overflow: hidden;
+     
+    
+     
+  }
+  /* ______header-contents________  */
+  .header-content{
+    width:50%;
+    height:100%;
+    padding:4em 1em 5em 5em;
+    
+  
+  }
+
+  /* ______header-contents-animation Start________  */
+  .move-right{
+    animation:moveright 1s linear 1;
+    animation-delay:1s;
+    visibility:hidden;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+ 
+  @keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility:visible;
+     }
+     100%{
+        transform: translateY(0);
+        visibility:visible;
+     }
+     
+  }
+   /* ______header-contents-animation End________  */
+  .header-content .title{
+    font-size:3.2em;
+    line-height:1.1em;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    margin-bottom:0.5em;
+  }
+  .header-description{
+    font-size:0.78em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width:100%;
+    margin-bottom:1.9em;
+  }
+  .Watch-live-button{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    background-color:#DD0000;
+    display: flex;
+    align-items: center;
+    gap:0.8em;
+    font-size:0.78em;
+    border: 0;
+    border-radius:0.3em;
+    padding:0.8em 1.3em;
+     
+     
+  }
+.button-text{
+    text-decoration: none;
+    color:white;
+}
+
+.header-image{
+    width:50%;
+     
+}
+.header-image img{
+    width:100%;
+    height:100%;
+    padding-top: 2em;
+    padding-right:3em;
+    /* ________header-image animation start______________ */
+    animation:zoomin 1s linear 1;
+    animation-delay:2s;
+    visibility:hidden;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  @keyframes zoomin{
+    0%{
+        transform:scale(0.5);
+        visibility:visible;
+     }
+     100%{
+        transform:scale(1);
+        visibility:visible;
+     }
+     /* ________header-image animation end______________ */
+     
+  }
+  /*  ______________________Header-Section End_______________________  */
+  
+
+ 
+ 
+  
+
+ 
